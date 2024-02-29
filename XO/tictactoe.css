@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #FFD700;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  background-color: #FFD700; 
+  padding: 10px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5fffa; /* Black color for cell */
+  cursor: pointer;
+  font-size: 5em;
+}
+
+.cell:hover {
+  background-color: #c0c0c0; /* Light gray hover color */
+}
+
+.cell.X {
+  color: #FFA500; /* Orange color for X */
+}
+
+.cell.O {
+  color: #FF4500; /* Blue color for O */
+}
